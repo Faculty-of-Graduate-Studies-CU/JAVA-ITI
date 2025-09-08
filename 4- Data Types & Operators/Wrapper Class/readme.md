@@ -1,2 +1,24 @@
-- There are three reasons that you might use a wrapper class rather than a primitive :
-- 
+
+#### Wrapper Classes
+
+Java provides wrapper classes for each primitive type to use them as objects.
+
+| Primitive | Wrapper Class | Example |
+| :--- | :--- | :--- |
+| `byte` | `Byte` | `Byte b = Byte.valueOf((byte)10);` |
+| `short` | `Short` | `Short s = Short.valueOf((short)100);` |
+| `int` | `Integer` | `Integer i = Integer.valueOf(1000);` |
+| `long` | `Long` | `Long l = Long.valueOf(10000L);` |
+| `float` | `Float` | `Float f = Float.valueOf(3.14f);` |
+| `double` | `Double` | `Double d = Double.valueOf(3.14159);` |
+| `char` | `Character` | `Character c = Character.valueOf('A');` |
+| `boolean` | `Boolean` | `Boolean bool = Boolean.valueOf(true);` |
+
+#### Autoboxing & Unboxing:
+
+```java
+// Autoboxing (automatic conversion primitive → wrapper)
+Integer num = 42; // Equivalent to: Integer num = Integer.valueOf(42);
+
+// Unboxing (automatic conversion wrapper → primitive)
+int value = num; // Equivalent to: int value = num.intValue();
