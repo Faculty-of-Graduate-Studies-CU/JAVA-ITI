@@ -19,5 +19,16 @@
     AS -->|destroy()| AD[Applet Destroyed]
     AD --> End([end<br>state])
 ```
-
+#### The lifecycle of an Applets:
+- init():
+  - Called when the applet is being initialized for the first time
+- start():
+  - Called whenever the browser`s windows is activated
+- paint(Graphics g):
+  - called after start() to paint the applet
+  - or whenever the applet is repainted
+- stop()
+  - called whenever the browser`s windows is deactivated
+- destroy()
+  - called when the browser`s window is closed
 
