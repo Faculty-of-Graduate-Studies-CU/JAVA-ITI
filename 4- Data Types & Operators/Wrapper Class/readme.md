@@ -32,3 +32,8 @@ int parsed = Integer.parseInt("456"); // Parse String to int
 int max = Integer.MAX_VALUE; // Maximum value constant
 int min = Integer.MIN_VALUE; // Minimum value constant
 ```
+#### Use Cases for Wrapper Classes:
+- `Collections:` Required for storing primitives in generics
+- `Nullable values:` Can represent null instead of default values
+- `Utility methods:`Provide useful conversion and checking methods
+- `Reflection:` Required when working with reflection APIs
