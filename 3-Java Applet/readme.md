@@ -35,5 +35,5 @@
 - which will invoke `update(Graphics g)` to clear the applet
 - which in turn invoke `paint(Graphics g)`to draw the applet again
 > to create your own applet,you write a class that extend class `Applet` ,then you can override the appropriate methods of life cycle.
-- in order to run the applet we have to create a simple HTML web page,then we invoke the applet using`<applet> `tag
+- in order to run the applet we have to create a simple HTML web page,then we invoke the applet using`<applet>`tag
 - 
