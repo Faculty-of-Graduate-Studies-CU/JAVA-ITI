@@ -31,4 +31,7 @@
   - called whenever the browser`s windows is deactivated
 - destroy()
   - called when the browser`s window is closed
-
+> You can refresh the applet anytime by calling: repaint()
+- which will invoke `update(Graphics g)` to clear the applet
+- which in turn invoke `paint(Graphics g)`to draw the applet again
+> to create your own applet,you write a class that extend class `Applet` ,then you can override the appropriate methods of life cycle.
