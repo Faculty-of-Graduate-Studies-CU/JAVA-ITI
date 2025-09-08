@@ -22,3 +22,13 @@ Integer num = 42; // Equivalent to: Integer num = Integer.valueOf(42);
 
 // Unboxing (automatic conversion wrapper → primitive)
 int value = num; // Equivalent to: int value = num.intValue();
+```
+#### Common Wrapper Class Methods:
+```java
+Integer num = 123;
+int primitive = num.intValue(); // Convert to primitive
+String str = num.toString(); // Convert to String
+int parsed = Integer.parseInt("456"); // Parse String to int
+int max = Integer.MAX_VALUE; // Maximum value constant
+int min = Integer.MIN_VALUE; // Minimum value constant
+```
