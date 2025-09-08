@@ -14,6 +14,15 @@ Java provides wrapper classes for each primitive type to use them as objects.
 | `char` | `Character` | `Character c = Character.valueOf('A');` |
 | `boolean` | `Boolean` | `Boolean bool = Boolean.valueOf(true);` |
 
+#### Reason to use WRAPPER Class
+- As an argument that expects an object
+- To use constants defined by the class
+   - such as `MIN_VALUE` AND `MAX_VALUE` that provide the upper and lower bounds of the data type
+- To use class methods for
+   - Converting value from and to other primitive types
+   - Converting from and to String
+   - Converting between number systems (decimal ,octal,hexadecimal,binary) 
+
 #### Autoboxing & Unboxing:
 
 ```java
