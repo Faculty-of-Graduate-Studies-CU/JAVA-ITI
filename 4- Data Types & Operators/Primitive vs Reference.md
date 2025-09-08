@@ -15,4 +15,31 @@
 | **Inheritance** | No inheritance | Inherit from `Object` class |
 | **Method support** | No methods | Have methods and fields |
 
-## Memory Diagram Example
+#### Memory Diagram Example
+STACK (Primitives) HEAP (Objects)
+┌──────────────┐ ┌────────────────────┐
+│ int x = 10 │ │ │
+│ │ │ String Object │
+│ String ref ────────→ │ - value: "Hello" │
+│ │ │ - other fields... │
+└──────────────┘ └────────────────────┘
+#### Code Example Demonstrating Differences
+
+```java
+// PRIMITIVE TYPES
+int a = 10;
+int b = a;  // Value copy (b gets 10)
+a = 20;     // Changing a doesn't affect b
+System.out.println(b); // Output: 10
+
+// REFERENCE TYPES
+int[] arr1 = {1, 2, 3};
+int[] arr2 = arr1;     // Reference copy (both point to same array)
+arr1[0] = 99;          // Changing through arr1 affects arr2
+System.out.println(arr2[0]); // Output: 99
+
+// Comparison examples
+String s1 = "Hello";
+String s2 = new String("Hello");
+System.out.println(s1 == s2);      // false (different references)
+System.out.println(s1.equals(s2)); // true (same content)
