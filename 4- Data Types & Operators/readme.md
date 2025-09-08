@@ -10,6 +10,9 @@
   - underscore
   - digits
 #### Primitive Data type & References
-// it`s not optional to choose to call by value or call by references
-// there is no Copy Constructor 
+> // it`s not optional to choose to call by value or call by references
+
+> // there is no Copy Constructor
+
+> // Each primitive data type has a corresponding wrapper class
 
