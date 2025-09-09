@@ -7,3 +7,5 @@
   * [ ] arrayidentifier = new DataType[size];//Construction
   * [ ] DataType[] arrayidentifier = {value1,value2,value3}
   * [ ] to determine the size of an array `arrayIdentifier.length`
+#### Although String is a reference data type(class)
+- it may figurativly be considered as the 9th data type because of its `Special Synatx and Operation`
