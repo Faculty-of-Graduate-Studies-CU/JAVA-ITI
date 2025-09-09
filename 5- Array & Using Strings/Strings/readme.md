@@ -14,3 +14,9 @@ String sp2 ="To java";
 - Concatentaion always return a new object that hold the result of concatenation .
   > The remain objects remain unchanged
 #### String objects are created without using the 'new' keyword and that are said to belong to the `String Pool`
+- String objects in the pool have a special behaviour :
+   - if we attempt to create a fresh String object with exactly the same characters as an object that already exist in the pool (Case Sensetive)
+   - Then no new Object will be created
+   - instead the newely declared reference will point to the existing object in the pool
+- Such behaviour results in abetter performance and  saves some heap memory
+> Remember : objects of class Strings are immutable.
