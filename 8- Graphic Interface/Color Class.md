@@ -32,3 +32,12 @@ color.LIGHT_GREY
 color.WHITE
 color.BLACKS
 ```
+- to specify a certain color o be used when drawing on applet`s Graphics object use the following methods of class Graphics :
+```java
+void setColor (color c);
+```
+- to change the colors of forground or background of any components ,use the following methods of components
+```java
+void setForground(color c);
+void setBackground(color c);
+```
